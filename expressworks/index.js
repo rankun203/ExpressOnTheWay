@@ -6,7 +6,7 @@ var app = express();
 app.use('/', express.static('public'));
 
 app.get('/books', function (req, res) {
-    var file = /*process.argv[3]*/ 'xx';
+    var file = process.argv[3];
 
     fs.readFile(file, function(err, data) {
         if (err) return res.sendStatus(500);
