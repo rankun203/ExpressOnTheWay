@@ -1,7 +1,6 @@
 {
   "name": "post",
   "plural": "posts",
-  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -16,7 +15,7 @@
       "required": true
     },
     "creationTime": {
-      "type": "date"
+      "type": ""
     }
   },
   "validations": [],

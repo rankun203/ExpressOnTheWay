@@ -1,0 +1,11 @@
+{
+  "name": "expressworks",
+  "version": "1.0.0",
+  "description": "express works",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
+}
