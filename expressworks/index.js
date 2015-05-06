@@ -1,9 +1,15 @@
 var express = require('express');
+var path = require('path');
+var bodyParser = require('body-parser');
+
 var app = express();
 
-app.use(express.static(process.argv[3] || path('index.html')));
+app.set('views', path.join('./', 'templates'));
+app.set('view engine', 'jade');
 
-app.get('/home', function(req, res) {
-    res.end('Hello World!');
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.get('/home', function (req, res) {
+    res.render('index', {date: new Date().toDateString()});
 });
 app.listen(process.argv[2]);
