@@ -5,6 +5,9 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(require('stylus').middleware('public'));
+
+app.use('/', express.static('public'));
 
 app.post('/form', function (req, res) {
     res.end(req.body.str.split('').reverse().join(''));
