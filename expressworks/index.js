@@ -13,10 +13,6 @@ app.use('/', express.static('public'));
 // http://localhost:3000/message?id=45678765456789
 // test: /search/?results=recent&amp;type=quote&amp;page=6
 app.get('/search', function (req, res) {
-    res.send({
-        results: req.query.results,
-        type: req.query.type,
-        page: req.query.page
-    });
+    res.send(req.query);
 });
 app.listen(process.argv[2]);
