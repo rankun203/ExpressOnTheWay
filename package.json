@@ -1,0 +1,26 @@
+{
+  "name": "ExpressOnTheWay",
+  "version": "1.0.0",
+  "description": "Learning Express framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rankun203/ExpressOnTheWay.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "rankun203",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rankun203/ExpressOnTheWay/issues"
+  },
+  "homepage": "https://github.com/rankun203/ExpressOnTheWay",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
