@@ -14,4 +14,9 @@ app.get('/books', function (req, res) {
         res.json(JSON.parse(data));
     });
 });
-app.listen(process.argv[2]);
+var server = app.listen(process.argv[2], function() {
+    var host = server.address().address;
+    var port = server.address().port;
+
+    console.log('Server listening at http://%s:%s', host, port);
+});
